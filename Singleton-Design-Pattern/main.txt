@@ -1,0 +1,12 @@
+Definition: The singleton pattern is a software design pattern that restricts the instantiation of a class
+ to one "single" instance.
+You are not allowed to create even a second instance of the class.
+Constructor is static here and also private.
+Use case:
+When your code is accessing DB, creating single instace is better. 
+In logging system.
+
+NOT RECOMMENDED to use in general cases. If you create a single instance of your class and your code is very huge
+then debugging is difficult, even unit testing makes harder.
+
+RECOMMENDED: You may create one instance of your class, but you should not be restricted to create only one.
